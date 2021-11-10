@@ -1,0 +1,14 @@
+node {
+
+stage('build') {
+    println "build is running"
+    sh """
+    ./gradlew build
+  """
+}
+
+stage('deploy') {
+    println "deploy is running"
+}
+
+}
